@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+<h1>Lista de Productos</h1>
+<ul>
+    {% for producto in productos %}
+        <li>{{ producto.nombre }} - ${{ producto.precio }}</li>
+    {% empty %}
+        <li>No hay productos registrados</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'crear_producto' %}">
+    <button type="button">Crear Productos</button>
+</a>

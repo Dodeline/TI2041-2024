@@ -1,0 +1,12 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+<h1>Registrar Producto</h1>
+<form method="post">
+    {% csrf_token %}
+    Nombre: <input type="text" name="nombre"><br>
+    Precio: <input type="number" name="precio" step="0.01"><br>
+    <button type="submit">Registrar</button>
+    <a href="{% url 'lista_productos' %}">
+        <button type="button">Volver</button>
+    </a>
+</form>

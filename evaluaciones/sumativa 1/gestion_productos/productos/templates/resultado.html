@@ -1,0 +1,8 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+<h1>Producto Registrado</h1>
+<p>Nombre: {{ producto.nombre }}</p>
+<p>Precio: ${{ producto.precio }}</p>
+<a href="{% url 'lista_productos' %}">
+    <button type="button">Volver</button>
+</a>
