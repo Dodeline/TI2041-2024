@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Si tienes estilos CSS -->
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Tienda</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'lista_productos' %}">Ver Productos</a></li>
+                <li><a href="{% url 'agregar_producto' %}">Agregar Producto</a></li>
+                <li><a href="{% url 'lista_marcas' %}">Ver Marcas</a></li> <!-- Ajusta según tus urls -->
+                <li><a href="{% url 'lista_categorias' %}">Ver Categorías</a></li> <!-- Ajusta según tus urls -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Navega por nuestra colección de productos</h2>
+            <p>Encuentra los mejores productos y marcas. ¡Explora y compra!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

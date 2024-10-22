@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <h1>Agregar Producto</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        {{ form.nombre.label }} {{ form.nombre }}<br>
+        {{ form.marca.label }} {{ form.marca }}<br>
+        {{ form.categoria.label }} {{ form.categoria }}<br>
+        {{ form.precio.label }} {{ form.precio }}<br>
+        {{ form.stock.label }} {{ form.stock }}<br>
+        {{ form.descripcion.label }} {{ form.descripcion }}<br>
+        {{ form.caracteristicas.label }}<br>
+        {{ form.caracteristicas }}<br>
+        <button type="submit">Agregar</button>
+    </form>
+    <a href="{% url 'lista_productos' %}">Volver a la lista</a>
+</body>
+</html>
