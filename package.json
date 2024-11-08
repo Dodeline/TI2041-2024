@@ -1,0 +1,17 @@
+{
+  "name": "sumativa-1",
+  "version": "1.0.0",
+  "description": "prueba 1 Back End\r - **models.py**: Contiene los modelos de datos para Marca, Categoria, Caracteristica y Producto.\r - **views.py**: Define las vistas, incluyendo la lista de productos.\r - **urls.py**: Configura las rutas para acceder a las vistas.\r - **templates/**: Contiene las plantillas HTML, incluyendo lista_productos.html.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.7.0"
+  }
+}
